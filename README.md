@@ -117,5 +117,7 @@ https://github.com/DarkaOnLine/L5-Swagger/issues/149
 https://github.com/DarkaOnLine/L5-Swagger/compare/master...rswork:5.4.x-multidoc
 
 ## Future Help Required 
--change in the plugin without editing vendor files
--seperate base url not by edit json but from the config file
+
+-- change in the plugin without editing vendor files
+
+-- seperate base url not by edit json but from the config file
