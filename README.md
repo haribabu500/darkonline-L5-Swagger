@@ -2,19 +2,16 @@
 multiple ui generation in swager
 
 ## Installation
-php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
-
+composer require "darkaonline/l5-swagger:5.6.*"
 
 ## To get started, first publish L5-Swagger's config and view files into your own project:
 php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
 
-##publish config if not available 
+## publish config if not available 
 php artisan l5-swagger:publish-config
-###Mobile and web documentation seperateion in config/l5-swagger.php
 
+### Mobile and web documentation seperation in config/l5-swagger.php
 
-
-## Edited in files config/l5-swagger.php 
 for web added default as it is and for mobile added mobile
        
          'api' => [
@@ -103,8 +100,22 @@ for web added default as it is and for mobile added mobile
         ],
 
 
+## copy the vendor/darkonline
 
 ## Generate the doucmentation
 php artisan l5-swagger:generate
 
-copy the vendor/darkonline
+## Changed the generated json file in storage/api-docs folder as required
+
+
+## URL
+localhost/api/documentation
+localhost/mobapi/documenation
+
+## References
+https://github.com/DarkaOnLine/L5-Swagger/issues/149
+https://github.com/DarkaOnLine/L5-Swagger/compare/master...rswork:5.4.x-multidoc
+
+## Future Help Required 
+-change in the plugin without editing vendor files
+-seperate base url not by edit json but from the config file
