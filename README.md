@@ -1,11 +1,11 @@
 # darkonline-L5-Swagger
 multiple ui generation in swager
 
-##Installation
+## Installation
 php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
 
 
-##To get started, first publish L5-Swagger's config and view files into your own project:
+## To get started, first publish L5-Swagger's config and view files into your own project:
 php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
 
 ##publish config if not available 
@@ -14,11 +14,17 @@ php artisan l5-swagger:publish-config
 
 
 
-##Edited in files config/l5-swagger.php 
+## Edited in files config/l5-swagger.php 
 for web added default as it is and for mobile added mobile
-        'api' => [
-                'separated_doc' => true
-        ]
+       
+         'api' => [
+                /*
+                |--------------------------------------------------------------------------
+                | Edit to set the this group's title, will override global title
+                |--------------------------------------------------------------------------
+                */
+               'separated_doc' => true
+                ],
         'default' => [
             'api' => [
                 /*
@@ -26,7 +32,7 @@ for web added default as it is and for mobile added mobile
                 | Edit to set the this group's title, will override global title
                 |--------------------------------------------------------------------------
                 */
-                'title' => 'Resimator Web Application Documenation UI',
+                'title' => 'Laravel Web API Documentation UI',
             ],
             'routes' => [
                 /*
@@ -54,8 +60,7 @@ for web added default as it is and for mobile added mobile
                 | Absolute path to directory containing the swagger annotations are stored.
                 |--------------------------------------------------------------------------
                 */
-                'annotations' => base_path('app'),
-                
+                'annotations' => base_path('app/'),
             ],
         ],
         'mobile' => [
@@ -65,7 +70,7 @@ for web added default as it is and for mobile added mobile
                 | Edit to set the this group's title, will override global title
                 |--------------------------------------------------------------------------
                 */
-                'title' => 'Resimator Mobile API Documentation UI',
+                'title' => 'Laravel Mobile API Documentation UI',
             ],
             'routes' => [
                 /*
@@ -99,7 +104,7 @@ for web added default as it is and for mobile added mobile
 
 
 
-##Generate the doucmentation
+## Generate the doucmentation
 php artisan l5-swagger:generate
 
 copy the vendor/darkonline
