@@ -123,3 +123,5 @@ https://github.com/DarkaOnLine/L5-Swagger/compare/master...rswork:5.4.x-multidoc
 -- change in the plugin without editing vendor files
 
 -- seperate base url Without editingjson file.
+
+edited by haribabu
