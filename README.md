@@ -1,7 +1,7 @@
-# This is help file for the user of darkonlin/l5-swagger for multiple ui 
-
 # darkonline-L5-Swagger
 multiple ui generation in swager
+
+This doucment is for the user of darkonlin/l5-swagger for multiple ui generation
 
 ## Installation
 composer require "darkaonline/l5-swagger:5.6.*"
@@ -122,4 +122,4 @@ https://github.com/DarkaOnLine/L5-Swagger/compare/master...rswork:5.4.x-multidoc
 
 -- change in the plugin without editing vendor files
 
--- seperate base url not by edit json but from the config file
+-- seperate base url Without editingjson file.
